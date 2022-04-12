@@ -14,3 +14,5 @@ function handleSearchFormSubmit(event) {
 
     location.assign(queryString);
 }
+
+searchFormEl.addEventListener('submit', handleSearchFormSubmit);
