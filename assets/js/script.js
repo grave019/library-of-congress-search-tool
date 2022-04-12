@@ -9,4 +9,8 @@ function handleSearchFormSubmit(event) {
     if (!searchInputVal) {
         console.error('You must have a search input value!')
     }
+
+    var queryString = './search-results.html?q=' + searchInputVal + '&format=' + formatInputVal;
+
+    location.assign(queryString);
 }
